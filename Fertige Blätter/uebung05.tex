@@ -1,0 +1,74 @@
+\documentclass{uebblatt}
+
+\begin{document}
+
+\maketitle{5}
+
+Hinweis: $\mathbb{N}$ ist die Menge der natürlichen Zahlen, $\mathbb{Q}$ die der rationalen, $\mathbb{R}$ die der reellen.
+
+\begin{aufgabe}{Zu Körpern mit 3 und 4 Elementen}
+\begin{enumerate}
+\item Für $K = \{0, 1, x\}$ sind folgende Verknüpfungstafeln vorgegeben:\\
+Addition:\\
+\begin{tabular} {|c|c|c|c|}
+\hline
+ & \textbf0 & \textbf1 & \textbf{x}\\
+\hline
+\textbf0 & 0 & 1 & x\\
+\hline
+\textbf1 & 1 & x & 0\\
+\hline
+\textbf{x} & x & 0 & 1\\
+\hline
+\end{tabular} \\
+\\
+Multiplikation:\\
+\begin{tabular} {|c|c|c|c|}
+\hline
+ & \textbf0 & \textbf1 & \textbf{x}\\
+\hline
+\textbf0 & 0 & 0 & 0\\
+\hline
+\textbf1 & 0 & 1 & x\\
+\hline
+\textbf{x} & 0 & x & 1\\
+\hline
+\end{tabular} \bigbreak
+
+Man zeige, dass $K$ mit der angegebenen Addition und Multiplikation einen Körper bildet.
+\item Gibt es einen Körper mit 4 Elementen? Man gebe die Verknüpfungstafeln für Addition und Multiplikation an, sofern es diesen Körper gibt.
+\end{enumerate}
+\end{aufgabe}
+
+
+\begin{aufgabe}{Unterkörper von $\mathbb{Q}$ und $\mathbb{R}$}
+\begin{enumerate}
+\item Man bestimme alle Teilmengen von $\mathbb{Q}$, die bezüglich der üblichen Addition und Multiplikation rationaler Zahlen einen Körper bilden.\\
+Hilfe: 0 und 1 sind offensichtlich in jeder solchen Teilmenge enthalten. Aus der 1 lassen sich weitere Zahlen erzeugen, die in einem Körper enthalten sein müssen.
+\item Es sei $K \defeq \{a + b\sqrt{2} \> | \> a, b \in \mathbb{Q}\}$; $K$ werde mit der üblichen Addition und Multiplikation reeller Zahlen versehen. Man zeige, dass $K$ ein Körper ist.
+\end{enumerate}
+\underline{Ergänzende Bemerkung}:\\
+Offensichtlich gilt für $K$ von b) $\mathbb{Q} \subset K \subset \mathbb{R}$. Neben $K$ gibt es weitere Körper zwischen $\mathbb{Q}$ und $\mathbb{R}$, z.B. $\{a + b\sqrt{3} \> | \> a, b \in \mathbb{Q}\}$.
+\end{aufgabe}
+
+
+\begin{aufgabe}{Untervektorräume von $\mathbb{R}^n$?}
+Welche der folgenden Teilmengen $U$ von $\mathbb{R}^n$ ist ein Untervektorraum des $\mathbb{R}$-Vektorraums $\mathbb{R}^n$? Man gebe jeweils eine Begründung an.
+\begin{enumerate}
+\item $U = \{x = (\alpha_1, ..., \alpha_n) \> | \> \alpha_1 = \alpha_2 = ... = \alpha_n\}$
+\item $U = \{x = (\alpha_1, ..., \alpha_n) \> | \> \alpha_1^2 = \alpha_2^2\}$
+\item $U = \{x = (\alpha_1, ..., \alpha_n) \> | \> \alpha_1 = 1\}$
+\item $U = \{x = (\alpha_1, ..., \alpha_n) \> | \>  \alpha_1 + \alpha_2 + ... + \alpha_n = 0\}$
+\end{enumerate}
+\end{aufgabe}
+
+
+\begin{aufgabe}{Untervektorraum von $\mathbb{R}^\mathbb{N}$?}
+Es werde der $\mathbb{R}$-Vektorraum $\mathbb{R}^\mathbb{N}$ (statt $\mathbb{R}^\mathbb{N}$ ist auch die Bezeichnung $\mathbb{R}^\infty$ gebräuchlich) betrachtet:
+$$\mathbb{R}^\mathbb{N} = \{x = (\alpha_1, \alpha_2, ...) \> | \> \alpha_i \in \mathbb{R} \; \; \forall i \in \mathbb{N}\}$$
+Man gebe mit Begründung an, ob die Teilmenge $U \defeq \mathbb{R}^{(\mathbb{N})}$ von $\mathbb{R}^\mathbb{N}$ ein Untervektorraum von $\mathbb{R}^\mathbb{N}$ ist, wobei $$\mathbb{R}^{(\mathbb{N})} = \{x = (\alpha_1, \alpha_2, ...) \in \mathbb{R}^\mathbb{N} \> | \> \alpha_i \neq 0 \text{ für höchstens endlich viele } i \in \mathbb{N}\}$$
+\end{aufgabe}
+
+
+
+\end{document}

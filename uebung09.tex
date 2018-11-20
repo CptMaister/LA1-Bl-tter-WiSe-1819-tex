@@ -1,0 +1,55 @@
+\documentclass{uebblatt}
+\usepackage{enumitem}
+
+\begin{document}
+
+\maketitle{9}
+
+\begin{aufgabe}{ (2+2+2+2=8 Punkte)}
+Es sei $\mathbb{R}[X]$ der Polynomring über dem Körper $\mathbb{R}$ (mit einer Unbestimmten); $\mathbb{R}[X]$ ist bekanntlich unendlich dimensionaler $\mathbb{R}$-Vektorraum. Wir bezeichnen diesen Vektorraum kurz mit $V$. Folgende Abbildungen $D$ und $I$ von $V$ nach $V$ werden betrachtet:
+$$D: V \to V, \> p(X) = \sum \limits_{k=0}^{n} a_k X^k \mapsto \sum \limits_{k=1}^{n} ka_k X^{k-1} = p'(X)$$
+$$I: V \to V, \> p(X) = \sum \limits_{k=0}^{n} a_k X^k \mapsto \sum \limits_{k=0}^{n} \frac{1}{k+1} a_k X^{k+1} = \int \limits_{0}^{X}p(t) \, dt$$
+\begin{enumerate}
+\item $D$, $I \in Hom(V, V)$.
+\item $D$ ist surjektiv, aber nicht injektiv.
+\item $I$ ist injektiv, aber nicht surjektiv.
+\item Man bestimme explizit die Abbildungsvorschrift der Hintereinanderausführungen $D \circ I$ und $I \circ D$.
+\end{enumerate}
+\underline{Ergänzende Bemerkung}:\\
+Für einen endlich dimensionalen $K$-Vektorraum $W$ und eine $K$-lineare Abbildung $f : W \to W$ gilt „$f$ surjektiv $\Leftrightarrow$ $f$ injektiv $\Leftrightarrow$ $f$ bijektiv“. b) und c) zeigen, dass  „…“ nicht auf unendlich dimensionales $W$ ausgeweitet werden kann.
+\end{aufgabe}
+
+
+\begin{aufgabe}{ (4+2=6 Punkte)}
+An der Beschreibung der Dieder-Gruppe $D_4$ in \textbf{Aufgabe 9} erkennt man, dass jedes Element von $D_4$ eine $\mathbb{R}$-lineare Abbildung von $\mathbb{R}^2$ nach $\mathbb{R}^2$ ist; jedes Element von $D_4$ ist von der Form\\
+$f : \mathbb{R}^2 \ni x \mapsto Ax \in \mathbb{R}^2$, wobei $A = M(f; B, B) \in \mathbb{R}^{2 \times 2}$ mit der Standardbasis $B = (e_1, e_2)$ von $\mathbb{R}^2$.
+\begin{enumerate}
+\item Für $R_i, S_k$ ($i = 0, 1, 2, 3$, $k = 1, 2, 3, 4$) bestimme man die Matrizen $M(R_i; B, B), M(S_k; B, B)$.
+\end{enumerate}
+\underline{Hinweis vorab zu b)} (Er soll nicht nachgewiesen werden, dient vielmehr als Grundlage für b)!): \\
+Für $n \in \{2, 3, 4, …\}$ bilden die $n \! \times \! n$-Matrizen mit Komponenten in $\mathbb{R}$ (also insbesondere die $2 \! \times \! 2$-Matrizen mit Komponenten in $\mathbb{R}$) mit der Multiplikation $A \cdot A' = (a_{ij}) \cdot (a'_{ij}) = (c_{ij})$, $c_{ij} \defeq a_{i1} a'_{1j} + a_{i2} a'_{2j} + … + a_{in} a'_{nj}$ ein Monoid mit dem neutralen Element $E_n = (\delta_{ij}), \delta_{ij} \defeq 0$ für $i \neq j, \delta_{ii} \defeq 1$. 
+\begin{enumerate}[resume]
+\item Man zeige, dass die acht Matrizen von a) bezüglich der Multiplikation von Matrizen eine nichtabelsche Gruppe bilden.
+\end{enumerate}
+Hilfe: Es empfiehlt sich die Herstellung eines Bezugs zu dem, was bereits in \textbf{Aufgabe 9} gezeigt wurde.
+\end{aufgabe}
+
+\newpage
+
+\begin{aufgabe}{ (2+1+2=5 Punkte)}
+Drei Firmen A, B, C mit den Marktanteilen $\alpha_0, \beta_0, \gamma_0[\%]$ ($\alpha_0 + \beta_0 + \gamma_0 = 100$) konkurrieren. Nach einer Werbekampagne werden nach einem Jahr folgende Kundenbewegungen festgestellt:\\
+A hat $5\%$ seiner Kunden an B und $10\%$ seiner Kunden an C verloren, B hat $15\%$ an A und $10\%$ an C verloren, C hat jeweils $5\%$ an A und B verloren.\\
+(Anders ausgedrückt: A hat beispielsweise nur $85\%$ seiner Vorjahreskunden behalten, aber $15\%$ der Vorjahreskunden von B und $5\%$ der Vorjahreskunden von C dazu gewonnen.)
+\begin{enumerate}
+\item Welche Marktanteile $\alpha_1, \beta_1, \gamma_1 [\%]$ ($\alpha_1 + \beta_1 + \gamma_1 = 100$) haben die Firmen A, B, C nach einem Jahr? \\
+Man formuliere dies als lineares Gesetz, d.h. als eine $\mathbb{R}$-lineare Abbildung\break $\mathbb{R}^3 \ni x \mapsto Mx \in \mathbb{R}^3$ mit einer Matrix $M \in \mathbb{R}^{3 \times 3}$, so dass $\begin{pmatrix}\alpha_1\\\beta_1\\\gamma_1\end{pmatrix} = M \begin{pmatrix}\alpha_0\\\beta_0\\\gamma_0\end{pmatrix}$
+\end{enumerate}
+Der gleiche Trend setzt sich auch in den kommenden Jahren fort.
+\begin{enumerate}[resume]
+\item Man berechne, welche Marktanteile die Firmen A, B, C nach zwei und drei Jahren haben.
+\item Man ermittle, für welche Marktanteile ($\alpha_0, \beta_0, \gamma_0$) dieser Trend nichts ändern würde.
+\end{enumerate}
+\end{aufgabe}
+
+
+\end{document}

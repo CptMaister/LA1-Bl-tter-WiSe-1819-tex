@@ -1,0 +1,56 @@
+\documentclass{uebblatt}
+
+\begin{document}
+
+\maketitle{4}
+
+\begin{aufgabe}{Die Dieder-Gruppe $D_4$}
+Man stelle sich im $\mathbb{R}^2$ das Quadrat mit den Eckpunkten $(-1, -1), (1, -1), (1, 1), (-1,1)$ und dem Mittelpunkt $M (0, 0)$ sowie die Abbildungen $R_0, R_1, R_2, R_3, S_1, S_2, S_3, S_4$ von $\mathbb{R}^2$ nach $\mathbb{R}^2$ vor.\\
+$R_i, i = 0, 1, 2, 3$, seien die Drehungen um $M$ um den Winkel $i \cdot 90^\circ$.\\
+$S_1$ sei die Spiegelung an der Geraden durch $M$ und $(0, -1)$.\\
+$S_2$ sei die Spiegelung an der Geraden durch $M$ und $(1, -1)$.\\
+$S_3$ sei die Spiegelung an der Geraden durch $M$ und $(1, 0)$.\\
+$S_4$ sei die Spiegelung an der Geraden durch $M$ und $(1, 1)$.\\
+Bei allen acht Abbildungen wird das oben beschriebene Quadrat auf sich selbst abgebildet.\\
+Die Menge $D_4 = \{R_0, R_1, R_2, R_3, S_1, S_2, S_3, S_4\}$ ist mit der Hintereinanderausführung $\circ$ von Abbildungen als Verknüpfung eine Gruppe, bezeichnet als \textbf{Diedergruppe $D_4$} (bzw. Symmetriegruppe) des Quadrats.
+\begin{enumerate}
+\item Man erstelle die Verknüpfungstafel der $D_4$ und verifiziere die Gruppenaxiome.
+\item Man finde möglichst viele Untergruppen von $D_4$. \\
+\end{enumerate}
+
+\end{aufgabe}
+
+\begin{aufgabe}{Jede Untergruppe $U$ einer Gruppe $G$ führt zu einer Äquivalenzrelation}
+Es sei $G$ eine Gruppe mit der Verknüpfung $\circ$, $U \subset G$ sei eine Untergruppe von $G$. Auf $G$ werde die Relation $y \sim x$ wie folgt definiert: $y \sim x:\Leftrightarrow y \circ x^{-1} \in U$.
+\begin{enumerate}
+\item Man zeige, dass $\sim$ eine Äquivalenzrelation ist.
+\item Es sei $x \in G$. Man zeige, dass für die Äquivalenzklasse $[x]$ gilt:\\
+$[x] = \{y \in G \> | \> y = u \circ x$ für ein $u \in U\}$
+\item Wir führen für die Menge $\{y \in G \> | \> y = u \circ x$ für ein $u \in U\}$ aus b) die plausible Kurzschreibweise $U \circ x$ ein (Nach b) gilt dann $[x] = U \circ x$).\\
+Man zeige, dass die Abbildung $f:U \to U \circ x, u \mapsto u \circ x$ bijektiv ist.\\
+Hinweis: Zur Injektivität von $f$ zeige man für $u_1, u_2 \in U$: $f(u_1) = f(u_2) \Rightarrow u_1 = u_2$
+\end{enumerate}
+\underline{Ergänzende Bemerkung}:\\
+Ist $U$ eine \textbf{endliche} Untergruppe von $G$, so haben wegen b) und c) alle Äquivalenzklassen die gleiche Anzahl $n$ von verschiedenen Elementen; $n$ ist nämlich die Anzahl $|U|$ der verschiedenen Elemente von $U$. Nach der ergänzenden Bemerkung zur \textbf{Aufgabe 7} ist $G$ die disjunkte Vereinigung aller existierenden verschiedenen Äquivalenzklassen; ist $G$ \textbf{endlich} - sagen wir $|G| = m$ - ist also auch die Anzahl der existierenden verschiedenen Äquivalenzklassen endlich - sagen wir diese Anzahl ist $k$ - und folglich ist $m = k \cdot n$. \textbf{$|U|$ teile also $|G|$ (sogenannter „Satz von LAGRANGE")!}
+\\ \\ \\ \\ \\ \\
+\end{aufgabe}
+
+\begin{aufgabe}{Die Äquivalenzrelation von Aufgabe 10 im Falle $G = (\mathbb{Z}, +)$}
+Sei $G = \mathbb{Z}$ mit der Verknüpfung $+$ und für $i \in \{2, 3, 4, 5, 6, ...\}$ sei $U_i \defeq \{i \cdot z | z \in \mathbb{Z}\}$.\\
+$U_i$ heißt „die von $i$ erzeugte Untergruppe von $\mathbb{Z}$", denn jedes Element von $U_i$ ist 0 oder von der Form $i + ... + i$ oder von der Form $(-i) + ... + (-i)$. 
+\begin{enumerate}
+\item Bestätige zunächst kurz, dass $U_i$ wirklich eine Untergruppe von $(\mathbb{Z}, +)$ ist.
+\item Gemäß \textbf{Aufgabe 10} ist $x \sim y :\Leftrightarrow x + (-y) \in U_i$ Äquivalenzrelation auf $G = \mathbb{Z}$. Wie sehen die Äquivalenzklassen in diesem Fall explizit aus und wieviele verschiedene Äquivalenzklassen gibt es?\\
+Hinweis: Man kann $x - y \defeq x + (-y)$ definieren und dann auch sagen, dass „$y$ von $x$ subtrahiert wird". \\
+\end{enumerate}
+
+\end{aufgabe}
+
+\begin{aufgabe}{Die Gruppen der Ordnung 4}
+Durch Erstellen der Verknüpfungstafel bestimme man alle Gruppen mit 4 Elementen.\\
+Hilfe: Man denke an die „von einem Gruppenelement $a$ erzeugte Untergruppe $\{a^z | z \in \mathbb{Z}\}$" (vgl. \textbf{Aufgabe 11} und den \textbf{Satz von Lagrange} (siehe \textbf{Aufgabe 10}).
+\end{aufgabe}
+
+
+
+\end{document}
