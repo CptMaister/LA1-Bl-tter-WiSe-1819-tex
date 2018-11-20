@@ -2,31 +2,50 @@
 
 \begin{document}
 
-\maketitle{X}
+\maketitle{11}
 
-\begin{aufgabe}{?????}
+\begin{aufgabe}{ (1+2+1+2+1=7 Punkte)}
+Wir greifen \textbf{Aufgabe 30} auf; dort hatten wir bei a) die Matrix M. \\
+Zusätzlich zur Standardbasis $B = (e_1, e_2, e_3)$ betrachten wir im $\mathbb{R}$-Vektorraum $\mathbb{R}^3$ eine weitere Basis $\widetilde{B}$, wobei die Matris S die Transformationsmatrix $T(\widetilde{B}, B)$ des Basiswechsels $\widetilde{B} = (\tilde{\alpha_1}, \tilde{\alpha_2}, \tilde{\alpha_3}) \to B = (e_1, e_2, e_3)$ ist, d.h. zwischen $\widetilde{B}$ und $B$ besteht die Beziehung (=Basistransformation) $\tilde{a_k} = s_{1k} e_1 + s_{2k} e_2 + s_{3k} e_3, k = 1, 2, 3$.
+$$M = \frac{1}{20}\begin{pmatrix}
+17 && 3 && 1 \\
+1 && 15 && 1 \\
+2 && 2 && 18 \end{pmatrix} \qquad \quad
+S = \frac{1}{2}\begin{pmatrix}
+2 && 2 && 2 \\
+1 && -2 && 0 \\
+3 && 0 && -2 \end{pmatrix} = (s_{ij})$$
 \begin{enumerate}
-\item
-\item
+\item Man bestätige, dass $S^{-1} = \frac{1}{6} \begin{pmatrix} 2 && 2 && 2 \\ 1 && -5 && 1 \\ 3 && 3 && -3 \end{pmatrix}$
+\item Man berechne $\widetilde{M} = S^{-1}MS$ und $\widetilde{M^n}$ für $n \in \mathbb{N}$.
+\item Man bestätige: $M^n = S \widetilde{M^n} S^{-1}$.
+\item Man berechne $\lim \limits_{n \to \infty} M^n = N$ komponentenweise und $\lim \limits_{n \to \infty} M^n x_0 = N x_0$ für jede Startverteilung $x_0 = \begin{pmatrix} \alpha_0 \\ \beta_0 \\ \gamma_0 \end{pmatrix}$ mit $\alpha_0 + \beta_0 + \gamma_0 = 100$.
+\item Man berechne $M \tilde{a_k}$ für $k = 1, 2, 3$ (Man bedenke: die Elemente von $\mathbb{R}^3$ - wie $x_0$ von Teilaufgabe d) und $a_k$ - muss man sich als Spaltenvektoren vorstellen). Nach welcher Basis $\widetilde{B}$ hat man also zu suchen, um $\widetilde{M}$ in Diagonalgestalt zu bekommen? 
 \end{enumerate}
 \end{aufgabe}
 
 
-\begin{aufgabe}{?????}
+\begin{aufgabe}{ (2+2+2=6 Punkte)}
+In einem dreidimensionalen $\mathbb{R}$-Vektorraum $V$ mit Basen $B = (a_1, a_2, a_3)$ und $\widetilde{B} = (\tilde{\alpha_1}, \tilde{\alpha_2}, \tilde{\alpha_3})$ bestehe zwischen $B$ und $\widetilde{B}$ folgende Basistransformation:\\
+$\tilde{\alpha_1} = 2a_1 - a_2 - a_3$ \\
+$\tilde{\alpha_2} = 2a_1 - a_2$ \\
+$\tilde{\alpha_3} = -2a_1 + 2a_2 + 3a_3$ \\
+Gleichwertig könnte man auch sagen, dass die Transformationsmatrix $T(\widetilde{B}, B)$ des Basiswechsels $\widetilde{B} \to B$ die Matrix 
+$\begin{pmatrix} 2 && 2 && -2 \\
+-1 && -1 && 2 \\
+-1 && 0 && 3 \end{pmatrix}$ ist.
 \begin{enumerate}
-\item
-\item
+\item Man ermittle die inverse Basistransformation.
+\item Man berechne alle Vektoren, die bezüglich der Basis $B$ und der Basis $\widetilde{B}$ die gleichen Koordinaten haben, d.h. besitzt $v \in V$ bezüglich $B$ den Koordinatenvektor 
+$\begin{pmatrix} \xi_1 \\ \xi_2 \\ \xi_3 \end{pmatrix}$ und bezüglich $\widetilde{B}$ den Koordinatenvektor 
+$\begin{pmatrix} \tilde{\xi_1} \\ \tilde{\xi_2} \\ \tilde{\xi_3} \end{pmatrix}$, so soll 
+$\begin{pmatrix} \xi_1 \\ \xi_2 \\ \xi_3 \end{pmatrix}$ = $\begin{pmatrix} \tilde{\xi_1} \\ \tilde{\xi_2} \\ \tilde{\xi_3} \end{pmatrix}$ sein. \\
+Hilfe: Man mache sich bewusst, wie $\begin{pmatrix} \xi_1 \\ \xi_2 \\ \xi_3 \end{pmatrix}$ mit Hilfe von $T(\widetilde{B}, B)$ aus $\begin{pmatrix} \tilde{\xi_1} \\ \tilde{\xi_2} \\ \tilde{\xi_3} \end{pmatrix}$ hervorgeht.
+\item Es sei $A \in Hom(V, V)$ definiert durch $Aa_k = \tilde{a_k}, k = 1, 2, 3$ ($Aa_k$ steht kurz für $A(a_k)$). \\
+Man bestimme $M(A; B, B)$, $M(A; B, \widetilde{B})$, $M(A; \widetilde{B}, B)$ und $M(A; \widetilde{B}, \widetilde{B})$. \\
+Welcher Zusammenhang besteht zwischen $M(A; B, B)$ und $M(A; \widetilde{B}, B)$?
 \end{enumerate}
 \end{aufgabe}
-
-
-\begin{aufgabe}{?????}
-\begin{enumerate}
-\item
-\item
-\end{enumerate}
-\end{aufgabe}
-
 
 
 \end{document}
