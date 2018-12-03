@@ -61,7 +61,7 @@
 \renewcommand{\labelenumii}{\theenumii.}
 
 \newcounter{aufgabennummer}
-\addtocounter{aufgabennummer}{20}
+\addtocounter{aufgabennummer}{23}
 
 \newlength{\aufgabenskip}
 \setlength{\aufgabenskip}{1.5em}
